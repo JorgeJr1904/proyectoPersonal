@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:hover {
+            color: salmon;
+        }
+
+        div p:nth-child(2){
+            color: violet;
+        }
+
+        .pElement p::before{
+            content: "*";
+        }
+
+        .pElement p::after{
+            content: "/";
+        }
+
+        .pElement p::first-letter{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.platzi.com/media/user_upload/Tipos-de-selectores-pseudoclases-y-pseudoelementos-cbdcb23f-6e4f-4243-a2b3-c011f2ad5d17.jpg" alt="imagen">
+    </header>
+    <h3>PSEUDOCLASES</h3>
+    <p>Hola</p>
+    <div>
+        <P>COMO</P>
+        <p>Estas</p>
+    </div>
+    <br><br>
+    <h3>PSEUDOELEMENTOS</h3>
+    <p>Hola</p>
+    <div class="pElement">
+        <P>COMO</P>
+        <p>Estas</p>
+    </div>
+</body>
+</html>
