@@ -1,59 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modelo de Caja</title>
     <style>
-        body{
-            margin: 0px;
-        }
-        p{
-            font-size: 5px;
-        }
-        .item{
-            width: 80px;
-            height: 40px;
-            background-color: aqua;
-            box-sizing: border-box;
-            padding: 20px;
-            border: 2px solid salmon;
-            margin: 10px;
-            text-align: center;
-        }
+      body {
+        margin: 0px;
+      }
+      p {
+        font-size: 5px;
+      }
+      .item {
+        width: 80px;
+        height: 40px;
+        background-color: aqua;
+        box-sizing: border-box;
+        padding: 20px;
+        border: 2px solid salmon;
+        margin: 10px;
+        text-align: center;
+      }
 
-        .containerColapso{
-            display: flex;
-            flex-direction: column;
-        }
-        #imagenPosicionamiento{
-            width: 200px;
-        }
+      .containerColapso {
+        display: flex;
+        flex-direction: column;
+      }
+      #imagenPosicionamiento {
+        width: 200px;
+      }
+      img[src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/frontend_developer28.png"]
+      {
+        width: 175px;
+      }
+      section{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+      .card{
+        display: flex;
+        flex-direction: column;
+        background: peachpuff;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .card h6{
+        text-align: center;
+        margin: 0;
+        border-bottom: 3px solid red;
+        padding: 15px;
+        padding-top: 10px;
+      }
+      .cardBody{
+        text-align: center;
+        margin-top: 20px;
+      }
+      .cardBody img{
+        width: 90%;
+        border-radius: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="item">Modelo</div>
-        <div class="item">De</div>
-        <div class="item">Caja</div>
+      <div class="item">Modelo</div>
+      <div class="item">De</div>
+      <div class="item">Caja</div>
     </div>
 
     <h6>ELIMINACION DE COLAPSO DE MARGENES</h6>
 
     <p>
-        Como se puede ver el margen que las separa cambia y ya no
-        comparten el mismo margen si no que cada una tiene un margen
-        independiente.
+      Como se puede ver el margen que las separa cambia y ya no comparten el
+      mismo margen si no que cada una tiene un margen independiente.
     </p>
 
     <div class="containerColapso">
-        <div class="item">Modelo</div>
-        <div class="item">De</div>
-        <div class="item">Caja</div>
+      <div class="item">Modelo</div>
+      <div class="item">De</div>
+      <div class="item">Caja</div>
     </div>
 
-    <h6>TIPOS DE POSICIONAMIENTO EN CSS</h6>
-    <img id="imagenPosicionamiento" src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/frontend_developer26.png" alt="imagen de referencia">
-</body>
+      <h6>TIPOS DE POSICIONAMIENTO EN CSS</h6>
+      <img
+        id="imagenPosicionamiento"
+        src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/frontend_developer26.png"
+        alt="imagen de referencia"
+      />
+    <section>
+        <div class="card">
+            <h6>Propiedades y Valores de CSS mas usados</h6>
+            <div class="cardBody">
+                <a href="https://cssreference.io/">
+                    <img src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/frontend_developer28.png" alt="error al cargar la imagen"/></a>
+                <p>Click en la imagen para ver mas</p>
+            </div> 
+        </div>   
+    </section>
+  </body>
 </html>
