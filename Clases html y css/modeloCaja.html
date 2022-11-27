@@ -9,7 +9,10 @@
         body{
             margin: 0px;
         }
-        div{
+        p{
+            font-size: 5px;
+        }
+        .item{
             width: 80px;
             height: 40px;
             background-color: aqua;
@@ -19,13 +22,32 @@
             margin: 10px;
             text-align: center;
         }
+
+        .containerColapso{
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
-    <div>Modelo</div>
-    <div>De</div>
-    <div>Caja</div>
+    <div class="container">
+        <div class="item">Modelo</div>
+        <div class="item">De</div>
+        <div class="item">Caja</div>
+    </div>
 
     <h6>ELIMINACION DE COLAPSO DE MARGENES</h6>
+
+    <p>
+        Como se puede ver el margen que las separa cambia y ya no
+        comparten el mismo margen si no que cada una tiene un margen
+        independiente.
+    </p>
+
+    <div class="containerColapso">
+        <div class="item">Modelo</div>
+        <div class="item">De</div>
+        <div class="item">Caja</div>
+    </div>
 </body>
 </html>
