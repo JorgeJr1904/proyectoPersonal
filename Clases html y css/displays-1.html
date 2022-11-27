@@ -10,7 +10,7 @@
             margin: 0;
         }
         
-        div{ /*esta etiqueta es de tipo block por lo cual se le puede dar tamaño "Height y width"*/ 
+        .bloque{ /*esta etiqueta es de tipo block por lo cual se le puede dar tamaño "Height y width"*/ 
             width: 200px;
             height: 200px;
             margin: 20px;
@@ -32,6 +32,51 @@
             margin: 20px;
             background: slateblue;
         }
+
+        .container{
+            display: flex;
+            background: blue;
+            justify-content: center;
+            height: 200px;
+            align-items: center;
+        }
+
+        .item{
+            width: 35px;
+            height: 35px;
+            background: black;
+        }
+        .container .item:nth-child(2n+1){
+            background: white;
+        }
+
+        .containerGrid{
+            display: grid;
+            width: 400px;
+            height: 400px;
+            background: green;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .itemGrid{
+            background: pink;
+        }
+        .containerGrid .itemGrid:nth-child(1){
+            grid-column: 1 / 2;
+        }
+        .containerGrid .itemGrid:nth-child(2){
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .containerGrid .itemGrid:nth-child(3){
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        .containerGrid .itemGrid:nth-child(4){
+            grid-column: 4 / 4;
+            grid-row: 4 / 4;
+        }
+
     </style>
 </head>
 <body>
@@ -41,7 +86,29 @@
         click <a href="https://htmlreference.io/">aqui</a>
     </p>
 
-    <div>Bloque</div>
-    <button>inline block</button>
+    <div class="bloque">Bloque</div>
+    <button>inline block</button><br><br>
+
+    <h1>FLEXBOX</h1>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <p class="flexboxText">
+        Los Flexbox como su nombre lo indica son un tipo de cajas que dentro de ellas encierran items o cosas las cuales 
+        almacenan informacion como en este caso
+    </p>
+    <br><br><br><br><br>
+
+    <h1>GRID</h1>
+    <div class="containerGrid">
+        <div class="itemGrid"></div>
+        <div class="itemGrid"></div>
+        <div class="itemGrid"></div>
+        <div class="itemGrid"></div>
+    </div>
 </body>
 </html>
